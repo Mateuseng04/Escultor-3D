@@ -12,7 +12,7 @@ public:
 
   Sculptor();
   ~Sculptor();
-
+void salvarmodelo();
 void setColor(float r, float g, float b, float a);
 void putVoxel(int x, int y, int z);
 void cutVoxel(int x, int y, int z);
