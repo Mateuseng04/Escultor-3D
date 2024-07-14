@@ -1,0 +1,17 @@
+#ifndef CUTSPHERE_H
+#define CUTSPHERE_H
+#include "FiguraGeometrica.h"
+#include "Sculptor.h"
+
+class CutSphere::FiguraGeometrica {
+
+private:
+  int xcenter, ycenter, zcenter, radius;
+
+public:
+  CutSphere(int xcenter, int ycenter, int zcenter, int radius);
+  ~CutSphere(){}
+  void draw(Sculptor &t);
+};
+
+#endif CUTSPHERE_H
