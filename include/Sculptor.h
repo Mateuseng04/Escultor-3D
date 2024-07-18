@@ -8,11 +8,14 @@ protected:
   float r, g, b, a; // cores e transparência
   int nx, ny, nz; // dimensões
   Voxel ***v; // ponteiro para alocação dinâmica dos voxels
+  float lado; // lado do cubo
+
 public:
 
   Sculptor();
   ~Sculptor();
-void salvarmodelo();
+void alocarmemoria();
+void limparmemoria
 void setColor(float r, float g, float b, float a);
 void putVoxel(int x, int y, int z);
 void cutVoxel(int x, int y, int z);
