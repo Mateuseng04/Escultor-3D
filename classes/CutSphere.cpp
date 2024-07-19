@@ -1,18 +1,16 @@
 #include "CutSphere.h"
-#include <iostream.h>
+#include <iostream>
 
-CutSphere::CutSphere(int xcenter, int ycenter, int zcenter, int radius, float r, float g, float b, float a);
-  this -> xcenter = xcenter;
-  this -> ycenter = ycenter;
-  this -> zcenter = zcenter;
-  this -> radius = radius;
-  this -> r = r;
-  this -> g = g;
-  this -> b = b;
-  this -> a = a;
+CutSphere::CutSphere(int xcenter, int ycenter, int zcenter, int radius) 
+{
+  this->xcenter = xcenter;
+  this->ycenter = ycenter;
+  this->zcenter = zcenter;
+  this->radius = radius;
 
-CutSphere::draw(Sculptor &s) {
+}
+void CutSphere::draw(Sculptor &s) {
   std::cout << "removendo um esfera em ( " << xcenter << "," << ycenter << "," << zcenter << std::endl;
-  s.setColor(r, g, b, a);
-  s.PutSphere(xcenter, ycenter, zcenter, radius);
+  s.SetColor(r, g, b, a);
+  s.CutSphere(xcenter, ycenter, zcenter, radius);
 }
