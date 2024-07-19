@@ -1,7 +1,8 @@
 #include "PutEllipsoid.h"
-#include <iostream.h>
+#include <iostream>
 
-Putellipsoid::Putellipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, float r, float g, float b, float a){
+PutEllipsoid::PutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, int r, int g, int b, float a)
+{
   this->xcenter = xcenter;
   this->ycenter = ycenter;
   this->zcenter = zcenter;
@@ -13,8 +14,8 @@ Putellipsoid::Putellipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry
   this->b = b;
   this->a = a;
 }
-void Putellipsoid::draw(Sculptor &s){
+void PutEllipsoid::draw(Sculptor &s){
   std::cout << "Desenhando elipsoide" << std::endl;
-  s.setcolor(r, g, b, a);
-  s.Putelipsoid(xcenter, ycenter, zcenter, rx, ry, rz);
+  s.SetColor(r, g, b, a);
+  s.PutEllipsoid(xcenter, ycenter, zcenter, rx, ry, rz);
 }
