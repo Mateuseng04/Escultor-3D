@@ -3,7 +3,7 @@
 #include "FiguraGeometrica.h"
 #include "Sculptor.h"
 
-class PutSphere::FiguraGeometrica {
+class PutSphere : public FiguraGeometrica {
 private:
   int xcenter, ycenter, zcenter, radius;
   
@@ -16,4 +16,4 @@ public:
 
 };
 
-#endif PUTSPHERE_H
+#endif 
