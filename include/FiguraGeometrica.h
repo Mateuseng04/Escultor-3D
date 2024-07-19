@@ -1,19 +1,19 @@
-#ifndef FIGURAGEOMETRICA_H
-#define FIGURAGEOMETRICA_H
+#ifndef _FIGURAGEOMETRICA_H_
+#define _FIGURAGEOMETRICA_H_
 #include "Sculptor.h"
 
 class FiguraGeometrica {
 protected:
   float r, g, b; 
-  float a;
+  float a; // transparência;
 
 public:
-  virtual FiguraGeometrica(){};
+  FiguraGeometrica(){};
   virtual ~FiguraGeometrica(){};
 
 
-  virtual draw(Sculptor &t) = 0;
+  virtual void draw(Sculptor &t) = 0;
 
 };
 
-#endif FIGURAGEOMETRICA_H
+#endif 
