@@ -1,10 +1,10 @@
-#ifndef  CUTVOXEL_H
-#define  CUTVOXEL_H
+#ifndef  _CUTVOXEL_H_
+#define  _CUTVOXEL_H_
 #include "FiguraGeometrica.h"
 
-class CutVoxel::FiguraGeometrica {
+class CutVoxel : public FiguraGeometrica {
 private:
-  int nx, ny, nz;
+  int x, y, z;
 
 public:
   CutVoxel(int x, int y, int z);
