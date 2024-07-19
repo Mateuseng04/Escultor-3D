@@ -1,5 +1,5 @@
-#ifndef INTERPRETADOR_H
-#define INTERPRETADOR_H
+#ifndef _INTERPRETADOR_H_
+#define _INTERPRETADOR_H_
 #include "FiguraGeometrica.h"
 #include <vector>
 #include <string>
@@ -8,19 +8,19 @@
 class Interpretador {
 private:
   float r, g, b, a;
-  int dimx = 50; dimy = 50; dimz = 50;
+  int Dimx = 50, Dimy = 50, Dimz = 50;
 
 public:
   Interpretador();
   ~Interpretador();	
 
-  std::vector<FiguraGeometrica*> parse(std::string filename);
+  std::vector<FiguraGeometrica*>compile(std::string filename);
 
-  getDimx();
+  int getDimx();
 
-  getDimy();
+  int getDimy();
 
-  gteDimz();
+  int getDimz();
 
 };
-#endif INTERPRETADOR_H
+#endif 
