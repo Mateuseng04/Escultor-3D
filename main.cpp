@@ -1,9 +1,9 @@
-#include <stdlib.h>
 #include <iostream>
 #include <vector>
-#include "Sculptor.h"
+#include <cstdlib>
 #include "FiguraGeometrica.h"
 #include "Interpretador.h"
+#include "Sculptor.h"
 
 int main(int argc, char* argv[]) 
 {
