@@ -1,7 +1,7 @@
 #include "PutEllipsoid.h"
 #include <iostream>
 
-PutEllipsoid::PutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, int r, int g, int b, float a)
+PutEllipsoid::PutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, float r, float g, float b, float a)
 {
   this->xcenter = xcenter;
   this->ycenter = ycenter;
