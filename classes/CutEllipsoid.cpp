@@ -1,7 +1,9 @@
 #include "CutEllipsoid.h"
-#include <iostream.h>
+#include <iostream>
 
-Cutellipsoid::Cutellipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz, float r, float g, float b, float a){
+
+CutEllipsoid::CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz)
+{
   this->xcenter = xcenter;
   this->ycenter = ycenter;
   this->zcenter = zcenter;
@@ -13,8 +15,7 @@ Cutellipsoid::Cutellipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry
   this->b = b;
   this->a = a;
 }
-void Cutellipsoid::draw(Sculptor &s){
+  void CutEllipsoid::draw(Sculptor &s) {
   std::cout << "Removendo elipsoide" << std::endl;
-  s.setcolor(r, g, b, a);
-  s.Putelipsoid(xcenter, ycenter, zcenter, rx, ry, rz);
+  s.CutEllipsoid(xcenter, ycenter, zcenter, rx, ry, rz);
 }
