@@ -1,16 +1,16 @@
-#ifndef CUTELLIPSOID_H
-#define CUTELLIPSOID_H
+#ifndef _CUTELLIPSOID_H_
+#define _CUTELLIPSOID_H_
 #include "FiguraGeometrica.h"
 #include "Sculptor.h"
 
 
-class CutEllipsoid::FiguraGeometrica{
+class CutEllipsoid : public FiguraGeometrica{
 
 private:
   int xcenter, ycenter, zcenter, rx, ry, rz;
 
 public:
-  CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int r);
+  CutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
   ~CutEllipsoid(){}
 
 
@@ -18,4 +18,4 @@ public:
 
 };
 
-#endif CUTELLIPSOID_H
+#endif 
